@@ -1212,14 +1212,14 @@ window.dpPlugins = window.dpPlugins || function (t) {
             });
 
             this.player.on('timeupdate', () => {
-                if (Date.now() - 1000 * 60 * 8 >= this.now) {
-                    this.now = Date.now();
-                    this.isAppreciation().then((data) => {
-                    }).catch((error) => {
-                        this.player.pause();
-                        contextmenu.show(offsetWidth / 2.5, offsetHeight / 3);
-                    });
-                }
+                // if (Date.now() - 1000 * 60 * 8 >= this.now) {
+                //     this.now = Date.now();
+                //     this.isAppreciation().then((data) => {
+                //     }).catch((error) => {
+                //         this.player.pause();
+                //         contextmenu.show(offsetWidth / 2.5, offsetHeight / 3);
+                //     });
+                // }
             });
 
             this.player.template.settingBox.addEventListener('click', () => {
